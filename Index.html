@@ -12,6 +12,16 @@
          <div id="resultSection" class="result-section">
         <p class="status-msg">Welcome to Wordly! This is a simple web application that allows you to search for words and their meanings.</p>
     </div>
+        <div id="definitionContainer" class="definition-container" style="display: none;">
+          <h2 id="searchWord">Word</h2>
+          <p id="phonetic">/Phonetic/</p> 
+            <p id="wordMeaning">The definition of the word will appear here.</p>
+        </div>
+        <div id="audionContainer" class="audio-container" style="display: none;">
+            <button id="playAudioBtn" class="audio-btn">Play Sound </button>
+            <audio id="wordAudio" src=""></audio>
+        </div>
+    </div>
         <form id="searchForm" class="search-form">
             <input type="text" id="searchInput" placeholder="Enter a word" required>
             <button type="submit" class="search-button">Search</button>
